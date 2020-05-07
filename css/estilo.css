@@ -34,6 +34,12 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.cabecera-item:hover{
+    background-color: darkgreen;
+}
+.cabecera-enlace:hover{
+    color: white;
+}
 .cabecera-enlace{
     text-decoration: none;
     color: black;
@@ -55,14 +61,17 @@ body{
 /* Footer */
 .pie-pagina{
     width: 100%;
+    background-color: green;
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 .pie-pagina-github{
+    color: white;
+}
+.pie-pagina-enlace{
     color: black;
 }
-
 /* Responsive */
 
 @media (max-width: 900px){
@@ -82,4 +91,84 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+/* Tabla */
+.listar{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+thead {
+    box-sizing: border-box;
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border-spacing: 2px;
+}
+th{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+    text-align: inherit;
+    box-sizing: border-box;
+    display: table-cell;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+td{
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    box-sizing: border-box;
+    display: table-cell;
+}
+
+/* Login */
+.iniciar-sesion{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formulario{
+    padding: 30px;
+    background-color: darkgray;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.texto-formulario{
+    font-size: 25px;
+}
+.campo{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 30px;
+}
+.boton{
+    height: 30px;
+    color: white;
+    background-color: darkgreen;
+    border: 0;
 }
